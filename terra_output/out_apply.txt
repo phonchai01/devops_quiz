@@ -1,0 +1,11 @@
+PS D:\65313211\devops_quiz> terraform apply                                 
+local_file.example: Refreshing state... [id=0a0a9f2a6772942557ab5355d76af442f8f65e01]
+
+No changes. Your infrastructure matches the configuration.
+
+Terraform has compared your real infrastructure against your configuration and found no differences, so no changes are needed.
+
+Apply complete! Resources: 0 added, 0 changed, 0 destroyed.
+PS D:\65313211\devops_quiz> 
+
+
