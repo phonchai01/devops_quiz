@@ -1,11 +1,35 @@
-PS D:\65313211\devops_quiz> terraform apply                                 
-local_file.example: Refreshing state... [id=0a0a9f2a6772942557ab5355d76af442f8f65e01]
+PS D:\65313211\devops_quiz> terraform apply
 
-No changes. Your infrastructure matches the configuration.
+Terraform used the selected providers to generate the following execution plan. Resource actions are indicated with the following symbols:
+  + create
 
-Terraform has compared your real infrastructure against your configuration and found no differences, so no changes are needed.
+Terraform will perform the following actions:
 
-Apply complete! Resources: 0 added, 0 changed, 0 destroyed.
+  # local_file.example will be created
+  + resource "local_file" "example" {
+      + content              = "Hello, World!"
+      + content_base64sha256 = (known after apply)
+      + content_base64sha512 = (known after apply)
+      + content_md5          = (known after apply)
+      + content_sha1         = (known after apply)
+      + content_sha256       = (known after apply)
+      + content_sha512       = (known after apply)
+      + directory_permission = "0777"
+      + file_permission      = "0777"
+      + filename             = "hello-world.txt"
+      + id                   = (known after apply)
+    }
+
+Plan: 1 to add, 0 to change, 0 to destroy.
+
+Do you want to perform these actions?
+  Terraform will perform the actions described above.
+  Only 'yes' will be accepted to approve.
+
+  Enter a value: yes
+
+local_file.example: Creating...
+local_file.example: Creation complete after 0s [id=0a0a9f2a6772942557ab5355d76af442f8f65e01]
+
+Apply complete! Resources: 1 added, 0 changed, 0 destroyed.
 PS D:\65313211\devops_quiz> 
-
-
